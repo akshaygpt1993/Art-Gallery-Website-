@@ -16,7 +16,7 @@ const ArtGallery = () => {
     setValue(newValue);
   };
 
-  const artGalleries = useSelector<any>((state) => state.gallery.values);
+  const artGalleries = useSelector<any>((state) => state.gallery.values) as Gallery[];
   const dispatch = useDispatch()
 
   const markGalleryLiked = (likedGalleryId: number) => {
@@ -32,10 +32,10 @@ const ArtGallery = () => {
         </MaterialTabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <AllArtGallery list={artGalleries as Gallery[]} markGalleryLiked={markGalleryLiked} />
+        <AllArtGallery list={artGalleries} markGalleryLiked={markGalleryLiked} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AllArtGallery  markGalleryLiked={markGalleryLiked} list={artGalleries.filter(({isLiked}: {isLiked: boolean}) => isLiked)}  />
+        <AllArtGallery  markGalleryLiked={markGalleryLiked} list={artGalleries.filter(({isLiked}) => isLiked)}  />
       </TabPanel>
     </Box>
   );

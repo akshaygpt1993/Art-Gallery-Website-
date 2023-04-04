@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import { Gallery } from '@/typings/gallery.typings';
 
 const ArtCard = (
-    {image:  imageUrl, isLiked, id, artist_name, location, slug, markGalleryLiked}:
+    {name, image: imageUrl, isLiked, id, artist_name, location, slug, markGalleryLiked}:
     Gallery
 ) => {
     const {push} = useRouter();
@@ -23,11 +23,11 @@ const ArtCard = (
     <Card sx={{ maxWidth: 345 }}>
         <Image src={imageUrl} width={345} height={140} alt="Lion Pic" />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {artist_name}
+        <Typography gutterBottom variant="h6" component="div">
+          {name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {location}
+          {artist_name} painting is kept at {location}
         </Typography>
       </CardContent>
       <CardActions>
