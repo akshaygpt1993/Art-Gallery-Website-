@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/art-gallery/[art-gallery].jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/art-gallery/[art-gallery].jsx", "modules/gallery/detail/index.jsx"],
   "exclude": ["node_modules"]
 }
