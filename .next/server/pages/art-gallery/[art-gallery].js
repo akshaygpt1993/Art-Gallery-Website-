@@ -23,13 +23,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./pages/art-gallery/[art-gallery].jsx":
+/***/ "./pages/art-gallery/[art-gallery].tsx":
 /*!*********************************************!*\
-  !*** ./pages/art-gallery/[art-gallery].jsx ***!
+  !*** ./pages/art-gallery/[art-gallery].tsx ***!
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _modules_gallery_detail__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../modules/gallery/detail */ \"./modules/gallery/detail/index.jsx\");\n\nconst Main = _modules_gallery_detail__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9hcnQtZ2FsbGVyeS9bYXJ0LWdhbGxlcnldLmpzeC5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFtRTtBQUVuRSxNQUFNQyxPQUFPRCwrREFBd0JBO0FBRXJDLGlFQUFlQyxJQUFJQSxFQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXJ0LWdhbGxlcnktd2Vic2l0ZS8uL3BhZ2VzL2FydC1nYWxsZXJ5L1thcnQtZ2FsbGVyeV0uanN4P2I2NWQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEFydEdhbGxlcnlEZXRhaWxzV3JhcHBlciBmcm9tIFwiLi4vLi4vbW9kdWxlcy9nYWxsZXJ5L2RldGFpbFwiXG4gXG5jb25zdCBNYWluID0gQXJ0R2FsbGVyeURldGFpbHNXcmFwcGVyXG4gXG5leHBvcnQgZGVmYXVsdCBNYWluIl0sIm5hbWVzIjpbIkFydEdhbGxlcnlEZXRhaWxzV3JhcHBlciIsIk1haW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/art-gallery/[art-gallery].jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _modules_gallery_detail__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../modules/gallery/detail */ \"./modules/gallery/detail/index.jsx\");\n\nconst Main = _modules_gallery_detail__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9hcnQtZ2FsbGVyeS9bYXJ0LWdhbGxlcnldLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFtRTtBQUVuRSxNQUFNQyxPQUFPRCwrREFBd0JBO0FBRXJDLGlFQUFlQyxJQUFJQSxFQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXJ0LWdhbGxlcnktd2Vic2l0ZS8uL3BhZ2VzL2FydC1nYWxsZXJ5L1thcnQtZ2FsbGVyeV0udHN4PzJjMTYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEFydEdhbGxlcnlEZXRhaWxzV3JhcHBlciBmcm9tIFwiLi4vLi4vbW9kdWxlcy9nYWxsZXJ5L2RldGFpbFwiXG4gXG5jb25zdCBNYWluID0gQXJ0R2FsbGVyeURldGFpbHNXcmFwcGVyXG4gXG5leHBvcnQgZGVmYXVsdCBNYWluIl0sIm5hbWVzIjpbIkFydEdhbGxlcnlEZXRhaWxzV3JhcHBlciIsIk1haW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/art-gallery/[art-gallery].tsx\n");
 
 /***/ }),
 
@@ -80,7 +80,7 @@ module.exports = JSON.parse('[{"id":1,"image":"https://akshay-art-gallery.s3.ap-
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/art-gallery/[art-gallery].jsx"));
+var __webpack_exports__ = (__webpack_exec__("./pages/art-gallery/[art-gallery].tsx"));
 module.exports = __webpack_exports__;
 
 })();
