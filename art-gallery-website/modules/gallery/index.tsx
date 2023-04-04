@@ -5,6 +5,9 @@ import Box from '@mui/material/Box';
 import AllArtGallery from '@/modules/gallery/list/all';
 import TabPanel, { a11yProps } from '@/components/tab-panel';
 import mockData from "./mock-data.json"
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleLike } from './redux/reducer';
+import { Gallery } from '@/typings/gallery.typings';
 
 const ArtGallery = () => {
   const [value, setValue] = useState(0);
@@ -13,16 +16,11 @@ const ArtGallery = () => {
     setValue(newValue);
   };
 
-  const [artGalleries, setArtGalleries] = useState(mockData);
+  const artGalleries = useSelector<{gallery: Gallery[]}>((state) => state.gallery.values);
+  const dispatch = useDispatch()
+
   const markGalleryLiked = (likedGalleryId: number) => {
-    const updatedGalleries = artGalleries.map((item) => {
-        if (item.id === likedGalleryId) {
-            return {...item, isLiked: !item.isLiked}
-        } else {
-            return item;
-        }
-    })
-    setArtGalleries([...updatedGalleries ])
+    dispatch(toggleLike(likedGalleryId))
   }
 
   return (

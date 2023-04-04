@@ -3,7 +3,6 @@ import ArtCard from "@/modules/gallery/list/components/art-card"
 import { Gallery } from "@/typings/gallery.typings";
 import { Grid } from "@mui/material";
 import { useState } from "react";
-import ArtGalleryData from "../../mock-data.json";
 
 const AllArtGallery = (
     {list, markGalleryLiked}:
