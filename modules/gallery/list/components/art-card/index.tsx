@@ -32,7 +32,11 @@ const ArtCard = (
       </CardContent>
       <CardActions>
         <Button onClick={navigateToDetail} size="small">Origin</Button>
-        {markGalleryLiked && <Button color={isLiked? "success": "primary"} onClick={() => markGalleryLiked(id)} size="small">Like</Button>}
+        {markGalleryLiked && (
+            <Button color={isLiked? "success": "primary"} onClick={() => markGalleryLiked(id)} size="small">
+                {isLiked ? "Liked": "Like"}
+            </Button>
+        )}
       </CardActions>
     </Card>
   );
