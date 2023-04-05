@@ -2,13 +2,22 @@ import Search from "@/components/search";
 import ArtCard from "@/modules/gallery/list/components/art-card"
 import { Gallery } from "@/typings/gallery.typings";
 import { Grid } from "@mui/material";
-import { useState } from "react";
+import { useState  } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleLike } from '../../redux/reducer';
 
-const AllArtGallery = (
-    {list, markGalleryLiked}:
-    {list: Array<Gallery>, markGalleryLiked?: (id: number) => void}
-) => {
+const ArtGalleryList = ({type} : {type: string}) => {
     const [searchText, setSearchText] = useState("");
+
+    let list = useSelector<any>((state) => state.gallery.values) as Gallery[];
+    if (type === "Favourite") {
+        list = list.filter(({isLiked}) => isLiked)
+    }
+
+    const dispatch = useDispatch()
+    const markGalleryLiked = (likedGalleryId: number) => {
+        dispatch(toggleLike(likedGalleryId))
+      }
 
     const filteredArtGalleries = list.filter(({artist_name, name, location}) => {
         return artist_name.toLowerCase().includes(searchText.toLowerCase())
@@ -30,4 +39,4 @@ const AllArtGallery = (
     )
 }
 
-export default AllArtGallery;
+export default ArtGalleryList;
